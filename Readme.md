@@ -1,3 +1,45 @@
+# Navigo Privacy Policy
+
+Last updated: August 29, 2026
+
+## 1. General Information
+This Privacy Policy describes how Navigo collects, processes, stores, and protects information when you interact with its users. By using Navigo on your Discord server, you agree to the practices described herein. If you do not agree to these terms, you must remove the bot or disable its features.
+
+## 2. Data We Collect
+Navigo operates under the principle of data minimization: it only processes the information strictly necessary to fulfill its functions of administration, automated moderation, security, and usability.
+
+### A. Data Stored in the Database (Persistent)
+- **Unique Identifiers.** Server, channel, role, and user IDs.
+- **Moderation Cases.** Sanctions applied, reasons, moderator ID, and sanctioned user ID.
+- **AFK.** Away message and timestamps when a user activates the away command.
+- **Automatic Responses.** Activation keys and configured custom responses.
+
+### B. Data Processed in Memory (Non-Persistent)
+- **Message Content.** The text of sent messages is analyzed in real time by the AutoMod engine to detect unauthorized mentions, filter Discord links/invitations, and analyze message similarity to prevent spam and duplicate messages. To do this, Navigo temporarily stores an array of the last 5 messages sent by each user in RAM. This history is never saved in the database and is automatically deleted.
+
+## 3. Use of Data
+The collected data is used exclusively to:
+- Provide the Bot's operational functionalities on authorized servers.
+- Maintain community security through automatic filtering of malicious content.
+- Allow administrators to keep a historical record of sanctions.
+- Navigo does NOT sell, rent, trade, or share any type of data with third parties, advertisers, or telemetry networks.
+
+## 4. Storage and Security
+- Persistent data is securely stored in protected databases using restricted access credentials and encryption in transit.
+- We automatically delete server settings if the Bot is removed from the server.
+- Data in RAM is volatile and disappears after the usage window expires.
+
+## 5. User Rights and Data Deletion
+- Any user or server administrator can request the complete deletion of data associated with their ID by submitting a formal request through the support server.
+- When the Bot is removed from a server, the server-related settings can be purged upon request or after system maintenance cycles.
+
+## 6. Discord Terms of Service Compliance
+Navigo strictly adheres to Discord's Developer Terms of Service and Discord's Privacy Policy. The use of Message Content Intent is limited exclusively to the operation of the administration and moderation engine.
+
+## 7. Changes to this Policy
+We reserve the right to update this Privacy Policy at any time to reflect technical changes to the Bot or legal requirements of the platform. The date of the last revision will be updated at the top of this document.
+
+
 # Política de Privacidad de Navigo
 
 Última actualización: 29 de agosto de 2026
