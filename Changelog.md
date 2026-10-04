@@ -1,37 +1,29 @@
-![](https://i.imgur.com/ghO869t.png$0)
-
-¡La Social Update aún no ha terminado! Volvemos a actualizarla para ofrecerte las últimas novedades y correcciones de Navigo.
+# Navigo 1.3.0 Community Update
 
 ## Nuevas características
-- **Invite tracker.** Ahora puedes saber qué invitación ha usado un usuario al entrar a tu servidor, revisar estadísticas y recompensar a tus miembros con leaderboards. Puedes configurarlo en `/trackinvites` y revisar el leaderboard en `/leaderboard invites`. Se pueden reestablecer todas las estadísticas usando el comando `/trackinvites reset`.
-- `/serverinfo`. Revisa la información del servidor en el que te encuentras.
-- `/userinfo`. Revisa la información de un usuario del servidor.
-- Se añade una nueva opción a `/afk <status> <temporary>`. Si selecciones `temporary`, el modo AFK se desactivará una vez envies un mensaje.
+- **Navigo Pro.** Nuevo plan de suscripción por servidor con herramientas avanzadas, activación instantánea tras la compra y beneficios para los servidores del equipo de Navigo. Incluye Aegis AI, reglas personalizadas, criptomonedas, sincronización de baneos y más. Configúralo con `/pro`.
+- **Aegis AI**. La moderación de Navigo ahora entiende las normas de tu servidor y analiza los mensajes con IA, avisando o actuando según lo configures. Configúralo con una suscripción Pro y `/aegis`.
+- **Sincronización de baneos.** Puedes enlazar servidores para compartir listas de baneos y mantener limpia la comunidad de forma conjunta.
+- **Criptomonedas.** Consulta precios en tiempo real y programa actualizaciones automáticas en tus canales con `/crypto` y `/cryptotimer`.
+- **Niveles con recompensas.** Sistema completo de progreso por servidor con roles que se entregan automáticamente al subir de nivel.
+- **Filtro de ingresos sospechosos.** Cuando entra un miembro, Aegis evalúa su cuenta (antigüedad, avatar, nombre y listas externas) y avisa en el canal configurado si el riesgo es alto.
+- **Perfil de usuario.** `/profile` reúne niveles, economía, rachas, tiempos de espera y actividad en llamadas.
+- **Estadísticas de moderación.** `/modstats` con resumen por meses, tipos de sanción y actividad de Aegis.
+- **Recompensas por votar.** Votar en top.gg otorga recompensas exclusivas cada 12 horas.
+- **Rachas diarias.** `/daily` ahora premia la constancia con bonificaciones crecientes.
+- **Llamadas anónimas:** `/phone` añade modo anónimo y registra la duración total de cada llamada.
+- **Excepciones de enlaces.** `/automod` permite gestionar enlaces permitidos y configurar el canal de avisos de Aegis.
 
 ## Cambios
-- La cantidad de XP por mensaje pasa de un máximo de 7 y mínimo de 5 a un máximo de 3 y mínimo de 1.
-- Hemos actualizado el mensaje que reciben los dueños de los servidores que invitan a Navigo.
-- `/case view <case>` ahora muestra un botón directo para revocar la sanción.
-- `/balance` ahora te permite ver tu saldo sin tener que automencionarte.
-- `/ban info` ahora muestra la información del baneo en un embed.
-- Los usuarios que has bloqueado ahora pueden robarte con `/rob`.
-- El embed de `/case all` se amplía de 10 casos por página a 15.
-- Ahora en `/phone`, puedes identificar al equipo de moderadores de Navigo por su insignia característica.
-- Se han rediseñado los comandos `/github user`, `/github org` y `/github repo`.
-- Se ha centralizado la búsqueda de usuarios en caché y en la API de Discord para hacer más rápidas las búsquedas de varios comandos.
-- Los cooldowns de los comandos de economía, el cooldown general y las fechas de `/github` han sido mudados al sistema de tiempo de Discord.
+- **Nuevo diseño visual.** embeds más limpios y minimalistas, sin campos y con la información en líneas claras.
+- **Configuración con botones y modales.** Los módulos, registros, casos, roles y respuestas automáticas se gestionan ahora con botones y formularios, sin comandos largos.
+- **Edición de casos.** los casos de moderación pueden editarse (motivo y pruebas adjuntas) directamente desde su tarjeta.
+- **Gestión de invitaciones.** Puedes eliminar una invitación desde su propia tarjeta de información.
+- **Leveling rediseñado.** /setlevel y /unsetlevel se integran en /leveling set|unset.
+- **Traducciones.** Inglés y español revisados y ampliados, con mensajes más claros en todos los módulos.
+- **Comandos contextuales.** Se han movido las acciones Hug, Kiss, Pat, Poke y Slap a comandos de menú contextual sobre usuarios.
 
 ## Errores solucionados
-- Hemos arreglado el comando `/starboard off`, que lanzaba un error inesperado cuando un usuario quería desactivar el starboard.
-- Hemos solucionado el sistema de leveling global, que en ciertos supuestos causaba un aumento exponencial de la XP del usuario.
-- El AFK ya no responde si es el propio usuario quien se menciona a sí mismo.
-- Se han solucionado problemas con la traducción de comandos, tanto en el comando `/help` como en la interfaz de Discord.
-- Se han reescrito parcialmente algunos comandos para mejorar su tiempo de respuesta.
-- Se ha solucionado un bug en `/ban` que no te permitía banear si no establecías una duración.
-- Se ha arreglado un error en `/ban remove` que no te permitía ejecutarlo.
-- El comando `/case view` ya busca correctamente a los usuarios.
-- El comando `/invite` ahora acepta la invitación sin que sea el enlace completo.
-- Se han corregido algunos errores en Anchor que hacían que no se emitieran correctamente los logs de canal creado.
-- La starboard ya borra mensajes si bajan del límite de estrellas y edita los mensajes actualizando el número de estrellas.
-- Si transfieres tan pocas monedas que tras impuestos se queda en 0, ahora `/transfer` te informa de que no puedes transferirlo.
-- Los logs de usuario baneado/desbaneado ahora reflejan bien si el usuario es un bot o no.
+- **Mensajes privados.** Arreglada la entrega de avisos al sancionar o recompensar a un usuario.
+- **Teléfono:** Ya no se producen errores si alguien escribe mientras espera a que la otra persona se conecte.
+- **Baneos y aislamientos.** Si la duración indicada no es válida, Navigo lo avisa en lugar de aplicar una sanción distinta a la esperada.
